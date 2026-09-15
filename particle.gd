@@ -13,6 +13,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	apply_force(findEMField(global_position)*charge*delta)
 	#print(findEMField(global_position)*charge*delta)
+	
 	pass
 
 func findEMField(pos: Vector2) -> Vector2:

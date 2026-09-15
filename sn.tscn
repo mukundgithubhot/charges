@@ -1,19 +1,10 @@
 [gd_scene format=3 uid="uid://ck3tl7enhiqpg"]
 
-[ext_resource type="Script" uid="uid://du8720w21j7uq" path="res://particle.gd" id="1_0ib8s"]
+[ext_resource type="PackedScene" uid="uid://noui65jtuduy" path="res://ns.tscn" id="1_0ib8s"]
 [ext_resource type="Texture2D" uid="uid://6blqvplry0yr" path="res://proton.svg" id="2_0ib8s"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_055p4"]
-radius = 50.0
-
-[node name="SN" type="RigidBody2D" unique_id=1440451881]
-gravity_scale = 0.0
-script = ExtResource("1_0ib8s")
+[node name="SN" unique_id=1440451881 instance=ExtResource("1_0ib8s")]
 charge = -10000.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272439906]
-shape = SubResource("CircleShape2D_055p4")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1973785051]
-scale = Vector2(0.75, 0.75)
+[node name="Sprite2D" parent="." index="1" unique_id=1973785051]
 texture = ExtResource("2_0ib8s")
