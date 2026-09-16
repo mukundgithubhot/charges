@@ -11,6 +11,12 @@ gravity_scale = 0.0
 script = ExtResource("1_sbnw1")
 charge = 10000.0
 
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1234406830]
+visible = false
+modulate = Color(0.9, 1, 0, 1)
+scale = Vector2(0.82, 0.82)
+texture = ExtResource("2_dh7j8")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272439906]
 shape = SubResource("CircleShape2D_055p4")
 

@@ -14,6 +14,7 @@ radius = 0.01
 [node name="Camera2D" type="Camera2D" parent="." unique_id=340440977]
 zoom = Vector2(0.2, 0.2)
 script = ExtResource("1_1bvp3")
+pan_speed = 2000.0
 
 [node name="Node2D" type="Node2D" parent="." unique_id=118295218]
 script = ExtResource("1_h2yge")
