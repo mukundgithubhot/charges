@@ -10,7 +10,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	global_position = get_global_mouse_position()
 	
-	if has_overlapping_bodies():
+	if has_overlapping_bodies() and Input.is_action_pressed("move") and not Input.is_action_pressed("smove"):
 		var bs = get_overlapping_bodies()
 		for b in bs:
 			if not (b in moving):
